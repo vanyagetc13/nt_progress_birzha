@@ -1,39 +1,77 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ticker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    position: relative;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.dropdown_input {
+    display: flex;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+
+    font-size: inherit;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.dropdown_input:hover, .dropdown_input:focus {
+    border: 1px solid wheat;
+    outline: none;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.dropdown_menu {
+    position: absolute;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: wheat;
+    min-height: 44px;
+    top: 42px;
+    left: 10px;
+    right: 10px;
+
+    border: 1px solid black;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.dropdown_menu li {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.dropdown_menu li:hover {
+    background-color: bisque;
+}
+
+.dropdown_menu li + li {
+    border-top: 1px solid black;
+}
+
+
+/* TEMP */
+.close_menu {
+    position: absolute;
+    right: -1px;
+    bottom: -20px;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 2px;
+    aspect-ratio: 1/1;
+    text-align: center;
 }
