@@ -27,7 +27,8 @@
     font-size: inherit;
 }
 
-.dropdown_input:hover, .dropdown_input:focus {
+.dropdown_input:hover,
+.dropdown_input:focus {
     border: 1px solid wheat;
     outline: none;
 }
@@ -60,7 +61,6 @@
     border-top: 1px solid black;
 }
 
-
 /* TEMP */
 .close_menu {
     position: absolute;
@@ -74,4 +74,65 @@
     padding: 2px;
     aspect-ratio: 1/1;
     text-align: center;
+}
+
+.devider {
+    height: 60px;
+    width: 1px;
+    background-color: black;
+}
+
+.prices {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.prices_column {
+    min-height: 40px;
+    min-width: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price_btn {
+    font-size: 1.1rem;
+    padding: 7px 14px;
+    cursor: pointer;
+
+    border: 1px solid;
+}
+
+.price_btn:hover {
+    border-color: rgb(9, 0, 178);
+}
+
+.buy_btn {
+    background-color: rgb(73, 255, 57);
+    border-color: green;
+}
+
+.sell_btn {
+    background-color: rgb(255, 54, 54);
+    border-color: rgb(152, 0, 0);
+}
+
+.table {
+    min-width: 80%;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+th {
+    border: 1px solid grey;
+    padding: 3px;
+}
+td {
+    border: 1px solid grey;
+    padding: 3px;
 }
